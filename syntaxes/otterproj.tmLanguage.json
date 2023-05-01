@@ -1,0 +1,13 @@
+{
+	"fileTypes": ["otterproj"],
+	"name": "otterproj",
+	"scopeName": "source.otterproj",
+	"patterns": [{
+		"name" : "otterproj.json",
+		"begin": ".*?",
+		"end": "$",
+		"patterns" : [{
+			"include" : "source.json"
+		}]
+	}]
+}

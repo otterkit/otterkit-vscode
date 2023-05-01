@@ -1,0 +1,31 @@
+{
+  "name": "Otterkit",
+
+  "project": {
+    "sdk": "Microsoft.NET.Sdk",
+    "target": "net7.0",
+    "standard": "2023"
+  },
+  
+  "build": {
+    "main": "test.cob",
+    "output": "Application",
+    "format": "Auto",
+    "columns": 80
+  },
+
+  "publish": {
+    "nativeAOT": true,
+    "include": [
+      "something.dll",
+      "something.so",
+      "something.dylib",
+      "otterkit.png"
+    ]
+  },
+
+  "dependencies": {
+    "Otterkit.Collections.Generic": "1.7.45",
+    "Otterkit.Interop.CSharp": "1.7.45"
+  }
+}

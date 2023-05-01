@@ -1,0 +1,53 @@
+{
+	"name": "otterkit-vscode",
+	"displayName": "Otterkit COBOL",
+	"description": "Otterkit COBOL extension for VS Code",
+	"version": "1.70.0",
+	"publisher": "ktsnowy",
+	"author": "KTSnowy",
+	"keywords": [
+		"Otterkit",
+		"COBOL"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/otterkit/otterkit-vscode.git"
+	},
+	"icon": "assets/otterkit-logo.png",
+	"galleryBanner": {
+		"color": "#212328",
+		"theme": "dark"
+	},
+	"engines": {
+		"vscode": "^1.70.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "otterproj",
+				"aliases": [
+					"Otterkit Project File",
+					"Otterkit Project"
+				],
+				"extensions": [
+					".otterproj"
+				],
+				"icon": {
+					"light": "./assets/otterproj.svg",
+					"dark": "./assets/otterproj.svg"
+				},
+				"configuration": "./otterproj-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "otterproj",
+				"scopeName": "source.otterproj",
+				"path": "./syntaxes/otterproj.tmLanguage.json"
+			}
+		]
+	}
+}
